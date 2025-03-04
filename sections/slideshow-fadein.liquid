@@ -1,0 +1,63 @@
+<div class="slideshow-fadein-main-section" >
+  <div class="slideshow-fadein-slider-section" >
+    <div class="fadein">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: 'master' }}"/>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% if section.settings.logo != blank or section.settings.content != blank %}
+      <div class="slideshow-fadein-content-section" >
+        {% if section.settings.content != blank %}
+          <div class="slideshow-fadein-info-section" >{{ section.settings.content }}</div>
+        {% endif %}
+        {% if section.settings.logo != blank %}
+          <div class="slideshow-fadein-logo-section" ><img src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}" width="136.13px" height="auto" /></div>
+        {% endif %}
+      </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Slideshow Fadein",
+  "tag": "section",
+  "class": "cus-slideshow-fadein",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content",
+      "default": "<p>OutdoorFabrics.com specializes in a diverse selection of high-quality fabrics, including Sunbrella® and other leading brands, offering custom production services for cushions, pillows, drapery, umbrellas, furniture covers, and more to enhance your indoor and outdoor environments with exceptional style and durability.</p>",
+      "info": "Please Enter Content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Logo",
+      "id": "logo",
+      "info": "Please Select Logo"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide_image",
+      "name": "Slide Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image",
+          "info": "Please Select Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow Fadein"
+    }
+  ]
+}
+{% endschema %}
