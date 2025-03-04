@@ -1,75 +1,261 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "collection_list_BYwqjK": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "featured_collection_kJ3jT9": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "collection": "custom-cushions"
           }
         },
-        "button": {
-          "type": "buttons",
+        "featured_collection_rCzMVt": {
+          "type": "featured_collection",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "collection": "custom-pillows"
+          }
+        },
+        "featured_collection_bRXzdd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-umbrellas"
+          }
+        },
+        "featured_collection_8zUfrK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-drapery"
+          }
+        },
+        "featured_collection_VEBdQ9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-throw-pillows"
+          }
+        },
+        "featured_collection_WXDTXe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-cushions-1"
+          }
+        },
+        "featured_collection_cBG6FT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-daybed"
+          }
+        },
+        "featured_collection_9RTGjX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-chaises"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "featured_collection_kJ3jT9",
+        "featured_collection_rCzMVt",
+        "featured_collection_bRXzdd",
+        "featured_collection_8zUfrK",
+        "featured_collection_VEBdQ9",
+        "featured_collection_WXDTXe",
+        "featured_collection_cBG6FT",
+        "featured_collection_9RTGjX"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "rich_text_Wex3z7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XdBnEm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Timeless Style, Built to Endure",
+            "heading_size": "h2"
+          }
+        },
+        "text_DAKgDe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your outdoor living area with fabrics that offer more than just great looks. Sunbrella® furniture fabrics are engineered to withstand everyday life—resisting stains, mildew, and fading, all while remaining effortlessly stylish. Crafted with 100% solution-dyed yarns, our fabrics maintain their bold, vibrant colors season after season.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XdBnEm",
+        "text_DAKgDe"
+      ],
       "settings": {
-        "title": "Featured products",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "collection_list_new_nKzkN3": {
+      "type": "collection-list-new",
+      "blocks": {
+        "featured_collection_hywzC7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "the-european-collection"
+          }
+        },
+        "featured_collection_Lx4q8K": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sunbrella®-outdoor-upholstery"
+          }
+        },
+        "featured_collection_8tJawX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sunbrella®-marine"
+          }
+        },
+        "featured_collection_mxG4Rb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sunbrella®-awning"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_hywzC7",
+        "featured_collection_Lx4q8K",
+        "featured_collection_8tJawX",
+        "featured_collection_mxG4Rb"
+      ],
+      "settings": {
+        "title": "Explore Fabrics",
         "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
         "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image_list_ERGCMN": {
+      "type": "image-list",
+      "blocks": {
+        "image_list_pNDP3Q": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/five-year-warranty.c9b5a6d4.jpg"
+          }
+        },
+        "image_list_kDWXxD": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/finish-treatment.fd262c9e.jpg"
+          }
+        },
+        "image_list_Rh3GMk": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/stain-resistant.34577771.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_list_pNDP3Q",
+        "image_list_kDWXxD",
+        "image_list_Rh3GMk"
+      ],
+      "settings": {
+        "title": "Guaranteed to last",
+        "image_content": "<p> \tFor detailed warranty information, visit our <a href=\"/Warranty.aspx\" rel=\"noopener noreferrer\">Warranty Information</a> page. </p>"
+      }
+    },
+    "logo_list_F4TCdi": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_list_UHNNm7": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_5.png"
+          }
+        },
+        "logo_list_n7cxFR": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_4.png"
+          }
+        },
+        "logo_list_A6jNQf": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_3.png"
+          }
+        },
+        "logo_list_gPY3Bt": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_2.png"
+          }
+        },
+        "logo_list_qXMDci": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_1.png"
+          }
+        },
+        "logo_list_adkY78": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_list_UHNNm7",
+        "logo_list_n7cxFR",
+        "logo_list_A6jNQf",
+        "logo_list_gPY3Bt",
+        "logo_list_qXMDci",
+        "logo_list_adkY78"
+      ],
+      "settings": {}
+    },
+    "we_accept_6gf38R": {
+      "type": "we-accept",
+      "settings": {
+        "image": "shopify://shop_images/we-accept.png"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "collection_list_BYwqjK",
+    "rich_text_Wex3z7",
+    "collection_list_new_nKzkN3",
+    "image_list_ERGCMN",
+    "logo_list_F4TCdi",
+    "we_accept_6gf38R"
   ]
 }
