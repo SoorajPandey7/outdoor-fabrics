@@ -1267,3 +1267,8 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+$(document).ready(function() {
+        $('.announcement-bar__link, .close-announcement-bar-popup').click(function() {
+            $('.PromoBannerRules').slideToggle('fast');
+        });
+    });

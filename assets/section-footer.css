@@ -7,7 +7,7 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
   display: block;
 }
 
@@ -16,10 +16,34 @@
     display: block;
   }
 
+  /* Original CSS for footer menu
   .footer-block.grid__item {
     padding: 0;
     margin: 4rem 0;
     width: 100%;
+  } */
+
+  .footer-block.grid__item {
+    padding: 0;
+    margin: 0rem 0;
+    width: 100%;
+    float: left;
+    max-width: 20%;
+    min-width: 115px;
+  }
+
+  .footer-block.grid__item h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333333;
+  }
+
+  .footer-block.grid__item .footer-block__details-content 
+  li a{
+    font-size: 13px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #333333;
   }
 
   .footer-block.grid__item:first-child {
@@ -41,8 +65,8 @@
 }
 
 .footer__content-bottom {
-  border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  border-top: solid 0rem rgba(var(--color-foreground), 0.08);
+  padding-top: 0rem;
 }
 
 .footer__content-bottom:only-child {
@@ -157,7 +181,11 @@
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444;
+    line-height: 22.86px;
+    margin-bottom: 8px;
   }
 }
 
@@ -290,9 +318,17 @@
   justify-content: center;
 }
 
+/* Original footer CSS
 .footer__copyright {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 93px;
 }
 
 @media screen and (min-width: 750px) {
@@ -325,7 +361,9 @@
   .footer-block__details-content > li {
     padding: 0;
   }
-
+  .footer-block__details-content > li {
+    line-height: 0;
+  }
   .footer-block:only-child li {
     display: inline;
   }
@@ -368,7 +406,10 @@
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 13px;
+        color: #444444;
+        line-height: 18px;
+        padding-bottom: 0px;
   }
 
   .footer-block__details-content > :first-child .list-menu__item--link {
@@ -443,7 +484,12 @@
 }
 
 .copyright__content {
-  font-size: 1.1rem;
+    font-size: 13.3333px;
+  display: block;
+  color: #999999 !important;
+    letter-spacing: 0;
+    opacity: 1;
+  line-height: 19.3333px;
 }
 
 .copyright__content a {

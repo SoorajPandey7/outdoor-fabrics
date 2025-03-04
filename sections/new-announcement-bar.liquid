@@ -164,7 +164,7 @@
     		    {%- if section.blocks.first.settings.popup_heading != blank -%}<div class="SubTitle" style="margin-bottom:5px; float:left;">
     			    {{ section.blocks.first.settings.popup_heading }}
     		    </div>{% endif %}
-    		    <div style="text-align:right; color:DarkGreen; font-size:14px; cursor:pointer; float:right; margin-top: -8px;">x</div>
+    		    <div class="close-announcement-bar-popup" style="text-align:right; color:DarkGreen; font-size:14px; cursor:pointer; float:right; margin-top: -8px;">x</div>
     		    <div style="clear:both; text-align: left; margin-left: 20px;font-size: 13px;line-height: 18.57px;">
     			    {{ section.blocks.first.settings.popup_content }}
     		    </div>
@@ -172,13 +172,6 @@
         </div>
   {% endif %}
 </div>
-<script>
-  $(document).ready(function() {
-        $('.announcement-bar__link').click(function() {
-            $('.PromoBannerRules').slideToggle('fast');
-        });
-    });
-</script>
 {% schema %}
 {
   "name": "New Announcement Bar",

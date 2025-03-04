@@ -1,0 +1,44 @@
+<div class="logo-list-main-section" >
+  <div class="logo-list-inner-section" >
+    <div class="logo-list-items-section">
+      <div class="logo-list-item-section">
+        {%- for block in section.blocks -%}
+          {% if block.settings.logo != blank %}<div class="logo-list-img" style="display: inline-block; max-width: 120px;"><img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}" width="{{ block.settings.logo.width }}" height="{{ block.settings.logo.height }}" /></div>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Logo list",
+  "tag": "section",
+  "class": "cus-logo-list",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo_list",
+      "name": "Logo List",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Logo",
+          "id": "logo",
+          "info": "Please Select Logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo list"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

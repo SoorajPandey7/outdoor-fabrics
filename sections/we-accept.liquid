@@ -1,0 +1,32 @@
+{% if section.settings.image != blank %}<div class="we-accept-main-section" >
+  <div class="spacing">
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="we-accept-inner-section" >
+    <div class="we-accept-image-section" ><img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}" width="200px" height="auto" /></div>
+  </div>
+</div>{% endif %}
+{% schema %}
+{
+  "name": "We Accept",
+  "tag": "section",
+  "class": "cus-we-accept",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image",
+      "info": "Please Select Image"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "We Accept"
+    }
+  ]
+}
+{% endschema %}

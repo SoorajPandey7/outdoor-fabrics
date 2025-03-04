@@ -1,0 +1,67 @@
+<div class="image-list-main-section" >
+  <div class="image-list-inner-section" >
+    {% if section.settings.title != blank or section.settings.image_content != blank %}<div class="image-list-head-section" >
+      {% if section.settings.title != blank %}<div class="image-list-title" >
+        {{ section.settings.title }}
+      </div>{% endif %}
+      {% if section.settings.image_content != blank %}<div class="image-list-content" >
+        {{ section.settings.image_content }}
+      </div>{% endif %}
+    </div>{% endif %}
+    <div class="image-list-items-section">
+      <div class="image-list-item-section">
+        {%- for block in section.blocks -%}
+          {% if block.settings.image != blank %}<div class="image-list-img"><img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" /></div>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Image list",
+  "tag": "section",
+  "class": "cus-image-list",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "Guaranteed to last",
+      "placeholder": "Please Enter Title"
+    },
+    {
+      "type": "textarea",
+      "label": "Image Content",
+      "id": "image_content",
+      "default": "<p> \tFor detailed warranty information, visit our <a href=\"/Warranty.aspx\" rel=\"noopener noreferrer\">Warranty Information</a> page. </p>",
+      "placeholder": "Please Enter Info"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_list",
+      "name": "Image List",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image",
+          "info": "Please select Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image list"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
