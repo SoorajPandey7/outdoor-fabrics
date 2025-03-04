@@ -11,6 +11,45 @@
   "sections": {
     "slideshow_fadein_UDBB3n": {
       "type": "slideshow-fadein",
+      "blocks": {
+        "slide_image_QW6fHj": {
+          "type": "slide_image",
+          "settings": {
+            "image": "shopify://shop_images/898625978.jpg"
+          }
+        },
+        "slide_image_Vd37fz": {
+          "type": "slide_image",
+          "settings": {
+            "image": "shopify://shop_images/1036011490.jpg"
+          }
+        },
+        "slide_image_pA8h7q": {
+          "type": "slide_image",
+          "settings": {
+            "image": "shopify://shop_images/1045997919.jpg"
+          }
+        },
+        "slide_image_nhETzA": {
+          "type": "slide_image",
+          "settings": {
+            "image": "shopify://shop_images/1025136340.jpg"
+          }
+        },
+        "slide_image_DAH3bG": {
+          "type": "slide_image",
+          "settings": {
+            "image": "shopify://shop_images/989556771.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_image_QW6fHj",
+        "slide_image_Vd37fz",
+        "slide_image_pA8h7q",
+        "slide_image_nhETzA",
+        "slide_image_DAH3bG"
+      ],
       "settings": {
         "content": "<p>OutdoorFabrics.com specializes in a diverse selection of high-quality fabrics, including Sunbrella® and other leading brands, offering custom production services for cushions, pillows, drapery, umbrellas, furniture covers, and more to enhance your indoor and outdoor environments with exceptional style and durability.</p>",
         "logo": "shopify://shop_images/sunbrella-logo.png"
