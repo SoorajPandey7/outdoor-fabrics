@@ -15,26 +15,61 @@
         "featured_collection_kJ3jT9": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_bRXzdd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "custom-cushions"
           }
         },
         "featured_collection_rCzMVt": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "custom-pillows"
+          }
+        },
+        "featured_collection_bRXzdd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-umbrellas"
+          }
+        },
+        "featured_collection_8zUfrK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-drapery"
+          }
+        },
+        "featured_collection_VEBdQ9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-throw-pillows"
+          }
+        },
+        "featured_collection_WXDTXe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-cushions-1"
+          }
+        },
+        "featured_collection_cBG6FT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-daybed"
+          }
+        },
+        "featured_collection_9RTGjX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-chaises"
           }
         }
       },
       "block_order": [
         "featured_collection_kJ3jT9",
+        "featured_collection_rCzMVt",
         "featured_collection_bRXzdd",
-        "featured_collection_rCzMVt"
+        "featured_collection_8zUfrK",
+        "featured_collection_VEBdQ9",
+        "featured_collection_WXDTXe",
+        "featured_collection_cBG6FT",
+        "featured_collection_9RTGjX"
       ],
       "settings": {
         "title": "",
@@ -48,9 +83,40 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "rich_text_Wex3z7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XdBnEm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Timeless Style, Built to Endure",
+            "heading_size": "h2"
+          }
+        },
+        "text_DAKgDe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your outdoor living area with fabrics that offer more than just great looks. Sunbrella® furniture fabrics are engineered to withstand everyday life—resisting stains, mildew, and fading, all while remaining effortlessly stylish. Crafted with 100% solution-dyed yarns, our fabrics maintain their bold, vibrant colors season after season.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XdBnEm",
+        "text_DAKgDe"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
-    "collection_list_BYwqjK"
+    "collection_list_BYwqjK",
+    "rich_text_Wex3z7"
   ]
 }
