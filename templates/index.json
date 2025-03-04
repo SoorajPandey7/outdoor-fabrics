@@ -160,11 +160,102 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_list_ERGCMN": {
+      "type": "image-list",
+      "blocks": {
+        "image_list_pNDP3Q": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/five-year-warranty.c9b5a6d4.jpg"
+          }
+        },
+        "image_list_kDWXxD": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/finish-treatment.fd262c9e.jpg"
+          }
+        },
+        "image_list_Rh3GMk": {
+          "type": "image_list",
+          "settings": {
+            "image": "shopify://shop_images/stain-resistant.34577771.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_list_pNDP3Q",
+        "image_list_kDWXxD",
+        "image_list_Rh3GMk"
+      ],
+      "settings": {
+        "title": "Guaranteed to last",
+        "image_content": "<p> \tFor detailed warranty information, visit our <a href=\"/Warranty.aspx\" rel=\"noopener noreferrer\">Warranty Information</a> page. </p>"
+      }
+    },
+    "logo_list_F4TCdi": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_list_UHNNm7": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_5.png"
+          }
+        },
+        "logo_list_n7cxFR": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_4.png"
+          }
+        },
+        "logo_list_A6jNQf": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_3.png"
+          }
+        },
+        "logo_list_gPY3Bt": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_2.png"
+          }
+        },
+        "logo_list_qXMDci": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download_1.png"
+          }
+        },
+        "logo_list_adkY78": {
+          "type": "logo_list",
+          "settings": {
+            "logo": "shopify://shop_images/download.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_list_UHNNm7",
+        "logo_list_n7cxFR",
+        "logo_list_A6jNQf",
+        "logo_list_gPY3Bt",
+        "logo_list_qXMDci",
+        "logo_list_adkY78"
+      ],
+      "settings": {}
+    },
+    "we_accept_6gf38R": {
+      "type": "we-accept",
+      "settings": {
+        "image": "shopify://shop_images/we-accept.png"
+      }
     }
   },
   "order": [
     "collection_list_BYwqjK",
     "rich_text_Wex3z7",
-    "collection_list_new_nKzkN3"
+    "collection_list_new_nKzkN3",
+    "image_list_ERGCMN",
+    "logo_list_F4TCdi",
+    "we_accept_6gf38R"
   ]
 }
