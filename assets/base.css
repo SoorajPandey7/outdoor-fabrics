@@ -2720,7 +2720,6 @@ account-icon span.account-tetxt-section {
     line-height: 16px;
     flex: 0 0 100%;
     max-width: 100%;
-  opacity: 0.789;
 }
 a#cart-icon-bubble {
     display: flex
@@ -2735,12 +2734,10 @@ a#cart-icon-bubble span.cart-tetxt-section {
     max-width: 100%;
     font-size: 11px;
     line-height: 16px;
-  opacity: 0.789;
 }
 .phone-section .phone-text-section {
     font-size: 11px;
     line-height: 16px;
-  opacity: 0.789;
 }
 /* Search */
 menu-drawer + .header__search {
@@ -3757,6 +3754,9 @@ details-disclosure > details {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;	 
 }
 @keyframes indeterminateAnimation {
   0% {
@@ -3900,9 +3900,6 @@ details-disclosure > details {
     position: absolute;
     left: 0;
     top: 0px;
-    background-image: linear-gradient(#333, transparent);
-    padding-left: 10px !important;
-  padding-right: 10px !important;
 }
 h4.card__sub_heading {
     color: #666;
@@ -3912,20 +3909,23 @@ h4.card__sub_heading {
     font-size: 16px;
     line-height: 21px;
     font-family: 'Abhaya Libre';
-    display: flex
-;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    margin: 0px 0px;
+    margin: 0px 10px;
       word-break: keep-all;
 }
 h3.card__heading {
         color: #fff;
-    padding: 0 0 8px;
     font-size: 17px;
     line-height: 22px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: left;
+    background-image: linear-gradient(#333, transparent);
+    padding: 8px 10px 3px;
 }
 .collection-list-wrapper.page-width {
     padding: 0px;

@@ -240,11 +240,12 @@
         </div>
       </div>
       <div class="header-menu-icons">
-        <a href="tel:(305) 470-8912" class="phone-section header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" onclick="location.href='tel:(305) 470-8912'" >
+        {% if section.settings.phone_number != blank %}<a href="tel:{{ section.settings.phone_number }}" class="phone-section header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" onclick="location.href='tel:(305) 470-8912'" >
           <div class="svg-wrapper"><img src="{{ 'phone.png' | asset_img_url }}" alt="Phone" width="30" height="30" ></div>
-          <div class="phone-text-section" >(305) 470-8912</div>
-        </a>
+          <div class="phone-text-section" >{{ section.settings.phone_number }}</div>
+        </a>{% endif %}
         {%- if shop.customer_accounts_enabled -%}
+		  {% if section.settings.my_account != blank %}
           <a
             href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
             class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
@@ -256,12 +257,12 @@
                   {{ customer | avatar }}
                 {%- else -%}
                   <span class="svg-wrapper"><img src="{{ 'account.png' | asset_img_url }}" alt="Account" width="30" height="30" ></span>
-                  <span class="account-tetxt-section" >MY ACCOUNT</span>
+                  <span class="account-tetxt-section" >{{ section.settings.my_account }}</span>
                 {%- endif -%}
               </account-icon>
             {%- else -%}
               <span class="svg-wrapper"><img src="{{ 'account.png' | asset_img_url }}" alt="Account" width="30" height="30" ></span>
-              <span class="account-tetxt-section" >MY ACCOUNT</span>
+              <span class="account-tetxt-section" >{{ section.settings.my_account }}</span>
             {%- endif -%}
             <span class="visually-hidden">
               {%- liquid
@@ -273,6 +274,7 @@
               -%}
             </span>
           </a>
+		  {% endif %}
         {%- endif -%}
   
         {%- for block in section.blocks -%}
@@ -282,13 +284,13 @@
           {%- endcase -%}
         {%- endfor -%}
   
-        <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {% if section.settings.shopping_bag != blank %}<a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
             {% if cart == empty %}
               <span class="svg-wrapper"><img src="{{ 'shopping-bag.png' | asset_img_url }}" alt="Cart" width="30" height="30" ></span>
-              <span class="cart-tetxt-section">SHOPPING BAG</span>
+              <span class="cart-tetxt-section">{{ section.settings.shopping_bag }}</span>
             {% else %}
               <span class="svg-wrapper"><img src="{{ 'shopping-bag.png' | asset_img_url }}" alt="Cart" width="30" height="30" ></span>
-              <span class="cart-tetxt-section">SHOPPING BAG</span>
+              <span class="cart-tetxt-section">{{ section.settings.shopping_bag }}</span>
             {% endif %}
           <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
           {%- if cart != empty -%}
@@ -299,7 +301,7 @@
               <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             </div>
           {%- endif -%}
-        </a>
+        </a>{% endif %}
       </div>
     </div>
   </header>
@@ -548,6 +550,21 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "text",
+      "id": "phone_number",
+      "label": "Phone Number"
+    },
+    {
+      "type": "text",
+      "id": "my_account",
+      "label": "My Account"
+    },
+    {
+      "type": "text",
+      "id": "shopping_bag",
+      "label": "Shopping Bag"
     },
     {
       "type": "header",
